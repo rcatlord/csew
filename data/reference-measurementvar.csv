@@ -1,0 +1,146 @@
+MeasurementVar,MeasurementLabel,MeasurementLevel,MeasurementType
+abancar1,Perceived problem with abandoned or burnt out cars in the local area,Person,Perception
+acquai_i,Acquaintance violence,Person,Incidence rate
+acquai_p,Acquaintance violence,Person,Prevalence rate
+afee_i,Advance fee fraud,Person,Incidence rate
+afee_p,Advance fee fraud,Person,Prevalence rate
+albenl_i,Domestic burglary with entry and no loss,Household,Incidence rate
+albenl_p,Domestic burglary with entry and no loss,Household,Prevalence rate
+albuel_i,Domestic burglary with entry and loss,Household,Incidence rate
+albuel_p,Domestic burglary with entry and loss,Household,Prevalence rate
+albura_i,Attempted domestic burglary,Household,Incidence rate
+albura_p,Attempted domestic burglary,Household,Prevalence rate
+albure_i,Domestic burglary with entry,Household,Incidence rate
+albure_p,Domestic burglary with entry,Household,Prevalence rate
+alburg_i,Domestic burglary,Household,Incidence rate
+alburg_p,Domestic burglary,Household,Prevalence rate
+allmvc_i,All vehicle crime,Household,Incidence rate
+allmvc_p,All vehicle crime,Household,Prevalence rate
+allmvt_i,All vehicle-related theft,Household,Incidence rate
+allmvt_p,All vehicle-related thefts,Household,Prevalence rate
+althft_p,All theft,Personal,Prevalence rate
+attmvt_i,Attempted theft of and from vehicles,Household,Incidence rate
+attmvt_p,Attempted theft of and from vehicles,Household,Prevalence rate
+bank_i,Bank and credit account fraud,Person,Incidence rate
+bank_p,Bank and credit account fraud,Person,Prevalence rate
+biketh_i,Bicycle theft,Household,Incidence rate
+biketh_p,Bicycle theft,Household,Prevalence rate
+bndenl_i,Burglary in building other than dwelling with entry and no loss,Household,Incidence rate
+bndenl_p,Burglary in building other than dwelling with entry and no loss,Household,Prevalence rate
+brndel_i,Burglary in building other than dwelling with entry and loss,Household,Incidence rate
+brndel_p,Burglary in building other than dwelling with entry and loss,Household,Prevalence rate
+burdnl_i,Burglary in dwelling with no loss,Household,Incidence rate
+burdnl_p,Burglary in dwelling with no loss,Household,Prevalence rate
+burgat_i,Attempted burglary in dwelling,Household,Incidence rate
+burgat_p,Attempted burglary in dwelling,Household,Prevalence rate
+burgen_i,Burglary in dwelling with entry,Household,Incidence rate
+burgen_p,Burglary in dwelling with entry,Household,Prevalence rate
+burgla_i,Burglary in dwelling,Household,Incidence rate
+burgla_p,Burglary in dwelling,Household,Prevalence rate
+burglo_i,Burglary in dwelling with loss,Household,Incidence rate
+burglo_p,Burglary in dwelling with loss,Household,Prevalence rate
+burgnd_i,Burglary in building other than dwelling,Household,Incidence rate
+burgnd_p,Burglary in building other than dwelling,Household,Prevalence rate
+burnda_i,Attempted burglary in building other than dwelling,Household,Incidence rate
+burnda_p,Attempted burglary in building other than dwelling,Household,Prevalence rate
+burnde_i,Burglary in building other than dwelling with entry,Household,Incidence rate
+burnde_p,Burglary in building other than dwelling with entry,Household,Prevalence rate
+bvpiburg,Worried about burglary,Person,Perception
+bvpicar,Worried about car crime,Person,Perception
+bvpiviol,Worried about violent crime,Person,Perception
+catt2,Police and local council are dealing with matters in this area - AGREE,Person,Perception
+catt2a,Police and local council are dealing with matters in this area - NEITHER,Person,Perception
+catt2b,Police and local council are dealing with matters in this area - DISAGREE,Person,Perception
+cjsovb1dv,Confident in effectiveness of CJS,Person,Perception
+clcntry2,Perceived change in crime level in the past few years - Country (up a lot),Person,Perception
+clloc2,Perceived change in crime level in the past few years - Local (up a lot),Person,Perception
+com_i,Computer misuse,Person,Incidence rate
+com_p,Computer misuse,Person,Prevalence rate
+cominj_i,Common assault with injury,Person,Incidence rate
+cominj_p,Common assault with injury,Person,Prevalence rate
+common_i,Common assault,Person,Incidence rate
+common_p,Common assault,Person,Prevalence rate
+comnij_i,Common assault with no injury,Person,Incidence rate
+comnij_p,Common assault with no injury,Person,Prevalence rate
+domest_i,Domestic violence,Person,Incidence rate
+domest_p,Domestic violence,Person,Prevalence rate
+drug1,Perceived problem with  people using or dealing drugs in the local area,Person,Perception
+drunk1,Perceived problem with people being drunk or rowdy in the local area,Person,Perception
+fairova1dv,Confident that the CJS as a whole is fair,Person,Perception
+frd_i,Fraud,Person,Incidence rate
+frd_p,Fraud,Person,Prevalence rate
+frdcom_i,Fraud and computer misuse,Person,Incidence rate
+frdcom_p,Fraud and computer misuse,Person,Prevalence rate
+hackua_i,Unauthorised access to personal information (including hacking),Person,Incidence rate
+hackua_p,Unauthorised access to personal information (including hacking),Person,Prevalence rate
+homeva_i,Arson and other criminal damage,Household,Incidence rate
+homeva_p,Arson and other criminal damage,Household,Prevalence rate
+mugg1_i,Mugging,Person,Incidence rate
+mugg1_p,Mugging,Person,Prevalence rate
+mv.van_i,Criminal damage to a vehicle,Household,Incidence rate
+mv.van_p,Criminal damage to a vehicle,Household,Prevalence rate
+nasb7hi,Perceived high level of anti-social behaviour,Person,Perception
+ninv_i,Consumer and retail fraud,Person,Incidence rate
+ninv_p,Consumer and retail fraud,Person,Prevalence rate
+noisneg1,Perceived problem with noisy neighbours in the local area,Person,Perception
+ofrd_i,Other fraud,Person,Incidence rate
+ofrd_p,Other fraud,Person,Prevalence rate
+othht_i,Other household theft,Household,Incidence rate
+othht_p,Other household theft,Household,Prevalence rate
+othpth_i,Other personal theft,Person,Incidence rate
+othpth_p,Other personal theft,Person,Prevalence rate
+patt1,Police in this area can be relied on to be there when you need,Person,Perception
+patt2,Police in this area would treat you with respect if you had contact with them,Person,Perception
+patt3,Police in this area treat everyone fairly regardless of who they are,Person,Perception
+patt5,Police in this area understand the issues that affect this community,Person,Perception
+patt6,Police in this area are dealing with the things that matter to this community,Person,Perception
+patt6b,Police in this area can be trusted,Person,Perception
+patt7,Taking everything into account I have confidence in the police in this area,Person,Perception
+pcfc_i,All personal crime including fraud,Person,Incidence rate
+pcfc_p,All personal crime including fraud,Person,Prevalence rate
+ratpol3,Police in the local area are doing a good or excellent job,Person,Perception
+robber_i,Robbery,Person,Incidence rate
+robber_p,Robbery,Person,Prevalence rate
+rubb1,Perceived problem with litter or rubbish in the local area,Person,Perception
+snatch_i,Snatch theft,Person,Incidence rate
+snatch_p,Snatch theft,Person,Prevalence rate
+snstla_i,Attempted snatch and stealth theft,Person,Incidence rate
+snstla_p,Attempted snatch and stealth theft,Person,Prevalence rate
+stlhea_i,Stealth theft,Person,Incidence rate
+stlhea_p,Stealth theft,Person,Prevalence rate
+strang_i,Stranger violence,Person,Incidence rate
+strang_p,Stranger violence,Person,Prevalence rate
+teen1,Perceived problem with teenagers hanging around in the local area,Person,Perception
+theftf_i,Theft from a motor vehicle,Household,Incidence rate
+theftf_p,Theft from a motor vehicle,Household,Prevalence rate
+thefto_i,Theft of a motor vehicle,Household,Incidence rate
+thefto_p,Theft of a motor vehicle,Household,Prevalence rate
+theftp_i,Theft from the person,Person,Incidence rate
+theftp_p,Theft from the person,Person,Prevalence rate
+thftdm_i,Theft from a dwelling and meter,Household,Incidence rate
+thftdm_p,Theft from a dwelling and meter,Household,Prevalence rate
+thfthh_i,All household theft,Household,Incidence rate
+thfthh_p,All household theft,Household,Prevalence rate
+thftod_i,Theft from outside dwelling,Household,Incidence rate
+thftod_p,Theft from outside dwelling,Household,Prevalence rate
+thftpl_i,All personal theft,Person,Incidence rate
+thftpl_p,All personal theft,Person,Prevalence rate
+tocrfc_p,Total CSEW crime including fraud,Person,Prevalence rate
+totalb_p,Total CSEW crime,Person,Prevalence rate
+totalh_i,All household crime,Household,Incidence rate
+totalh_p,All household crime,Household,Prevalence rate
+totper_i,All personal crime,Person,Incidence rate
+totper_p,All personal crime,Person,Prevalence rate
+vandal_i,Criminal damage  ,Household,Incidence rate
+vandal_p,Criminal damage  ,Household,Prevalence rate
+vandals1,Perceived problem with vandalism and graffiti in the local area,Person,Perception
+vininr_i,Violence without injury,Person,Incidence rate
+vininr_p,Violence without injury,Person,Prevalence rate
+violnr_i,All violence,Person,Incidence rate
+violnr_p,All violence,Person,Prevalence rate
+virs_i,Computer virus,Person,Incidence rate
+virs_p,Computer virus,Person,Prevalence rate
+viwinr_i,Violence with injury,Person,Incidence rate
+viwinr_p,Violence with injury,Person,Prevalence rate
+wound_i,Wounding,Person,Incidence rate
+wound_p,Wounding,Person,Prevalence rate

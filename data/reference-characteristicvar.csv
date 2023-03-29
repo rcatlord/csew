@@ -1,0 +1,25 @@
+CharacteristicVar,CharacteristicLabel
+accharm3,Accommodation type
+agegrp7,Age group (7 bands)
+club3,Number of visits to a nightclub last month
+depremp19,Employment deprivation index
+gor,Region
+h10sec4a,HRP occupation
+hemploy2a,HRP Employment status
+hrpage7,HRP Age
+hrpsex,HRP Sex
+illONS2,Long-standing illness or disability 
+incivgrp,Level of physical disorder in immediate area
+livharm1a,Marital status
+nsethgrp,Ethnic group
+oa_sup11,Output area classification
+pub3,Number of evening visits to a bar in the last month
+r10sec4a,Occupation
+remploy2a,Employment status
+rural3,Type of area (urban/rural)
+sex,Sex
+struct4,Structure of household
+tenharm,Tenure
+tothhin4,Total household income (7 groups)
+weekday2,Number of hours out of home on an average weekday
+Total,Total
