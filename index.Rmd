@@ -1,0 +1,147 @@
+---
+pagetitle: "CSEW Open Data tables"
+lang: "en-GB"
+output:
+  html_document:
+    self_contained: TRUE
+    highlight: textmate
+    theme: spacelab
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+library(tidyverse) ; library(reactable)
+
+# load estimates
+csew <- read_csv("data/CSEW_England and Wales_2022Q3.csv") 
+# load reference tables
+measurements <- read_csv("data/reference-measurementvar.csv")
+characteristics <- read_csv("data/reference-characteristicvar.csv")
+```
+
+# CSEW Open Data tables
+
+[Crime Survey for England and Wales](https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/methodologies/userguidetocrimestatisticsforenglandandwales) (CSEW) estimates split by offence group, age, sex, and key demographic characteristics are available as open data from the UK [Office for National Statistics](https://www.ons.gov.uk/). These data tables complement the full CSEW survey dataset from the [UK Data Service](https://beta.ukdataservice.ac.uk/datacatalogue/series/series?id=200009). 
+
+### Data tables
+
+There are six separate data tables available that can be downloaded as zip files from the following links:
+
+```{r}
+links <- data.frame(
+  Dataset = c("Personal Crime Incidence", "Personal Crime Prevalence", "Household Crime Incidence", "Household Crime Prevalence", "Perceptions Criminal Justice System", "Perceptions Other"),
+  URL = c("https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/personalcrimeincidencecsewopendatatable", "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/personalcrimeprevalencecsewopendatatable", "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/householdcrimeincidencecsewopendatatable", "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/householdcrimeprevalencecsewopendatatable", "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/perceptionscriminaljusticesystemcsewopendatatable", "https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/perceptionsothercsewopendatatable")
+)
+
+reactable(
+  links,
+  columns = list(
+    URL = colDef(html = TRUE, cell = function(value, index) {
+      sprintf('<a href="%s" target="_blank">%s</a>', links$URL[index], value)
+    })
+  )
+)
+```
+
+<br>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+
+- <strong>Incidence rate</strong>: the number of crimes per 1,000 adults or 1,000 households
+- <strong>Prevalence rate</strong>: the percentage of adults or households who were victims of crime in a 12 month period
+
+</div>
+<br>
+
+The data tables are structured in the same way with single estimates in each row and information about the estimates in columns. Alongside each single estimate are measurement variables and demographic characteristics. Further information is available in the 'Data table specification' section of the instruction document provided within each zip download. 
+
+A full list of the measurement variables and demographic characteristics available in the data tables are shown below.
+
+### Reference tables
+The measurement variables are split by level (Person and Household) and type (Incidence rate, Prevalence rate and Perception). Each corresponding variable has a name and descriptive label that mirrors those used in the main CSEW dataset held by the UK Data Service.
+```{r}
+reactable(measurements, filterable = TRUE, defaultPageSize = 10, highlight = TRUE)
+```
+
+Demographic characteristics are split by Person and Household levels (see `MeasurementLevel`). The variables also share the name and descriptive labels of the full CSEW dataset available from the UK Data Service.
+```{r}
+reactable(characteristics, defaultPageSize = 5, highlight = TRUE)
+```
+
+### Filtering CSEW estimates
+
+The following examples find CSEW estimates for certain demographic groups in R. For convenience we'll use a [dataset](data/CSEW_England and Wales_2022Q3.csv) combining all six CSEW Open Data tables for July to September 2022.
+
+*Number of incidents of robbery per 1,000 adults in the last 12 months*
+```{r, echo=TRUE}
+csew %>% 
+  filter(MeasurementVar == "robber_i",
+         CharacteristicVar == "Total",
+         Sex == "All adults",
+         Age == "16+") %>%
+  select(Estimate, StandardError, UnweightedCount)
+```
+
+*Percentage of adults who have been victims of robbery in the last 12 months*
+```{r, echo=TRUE}
+csew %>% 
+  filter(MeasurementVar == "robber_p",
+         CharacteristicVar == "Total",
+         Sex == "All adults",
+         Age == "16+") %>%
+  select(Estimate, StandardError, UnweightedCount)
+```  
+
+*Number of incidents of burglary per 1,000 households in the last 12 months*
+```{r, echo=TRUE}
+csew %>% 
+  filter(MeasurementVar == "alburg_i",
+         HouseholdType == "All households",
+         CharacteristicVar == "Total") %>%
+  select(Estimate, StandardError, UnweightedCount)
+```
+
+*Percentage of households that have been victims of burglary in the last 12 months*
+```{r, echo=TRUE}
+csew %>% 
+  filter(MeasurementVar == "alburg_p",
+         HouseholdType == "All households",
+         CharacteristicVar == "Total") %>%
+  select(Estimate, StandardError, UnweightedCount)
+```
+
+*Percentage of bicycle-owning households that have been victims of bike theft in the last 12 months*
+```{r, echo=TRUE}
+csew %>% 
+  filter(MeasurementVar == "biketh_p",
+         HouseholdType == "Bicycle-owning households",
+         CharacteristicVar == "Total") %>%
+  select(Estimate, StandardError, UnweightedCount)
+```
+
+*Percentage of adults who think that their local police are doing a good or excellent job*
+```{r, echo=TRUE}
+csew %>% 
+  filter(MeasurementVar == "ratpol3",
+         CharacteristicVar == "Total",
+         Sex == "All adults",
+         Age == "16+") %>%
+  select(Estimate, StandardError, UnweightedCount)
+```
+
+*Percentage of adults who perceive a high level of anti-social behaviour in their local area*
+```{r, echo=TRUE}
+csew %>%
+  filter(MeasurementVar == "nasb7hi",
+         CharacteristicVar == "Total",
+         Sex == "All adults",
+         Age == "16+") %>%
+  select(Estimate, StandardError, UnweightedCount)
+```
+
+### Further resources
+- [User guide to crime statistics for England and Wales, Office for National Statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/methodologies/userguidetocrimestatisticsforenglandandwales)
+- [CSEW Data dictionary, UK Data Service](https://doc.ukdataservice.ac.uk/doc/8812/mrdoc/ukda_data_dictionaries.zip)
